@@ -27,10 +27,5 @@ Next to the ratio, the last 300 swaps of every hot pool: how many wallets, how m
 | **[strak-sdk](https://github.com/usestrak/strak-sdk)** | Typed client for the public API. Node and browser, zero dependencies. |
 | **[awesome-tokenized-stocks](https://github.com/usestrak/awesome-tokenized-stocks)** | Issuers, venues and data sources for tokenized equities. |
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/usestrak/usestrak/output/snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/usestrak/usestrak/output/snake-light.svg">
-  <img alt="Contribution graph" src="https://raw.githubusercontent.com/usestrak/usestrak/output/snake-dark.svg">
-</picture>
 
 <sub>Free, no wallet, no token. Data from Jupiter, DexScreener and GeckoTerminal. Informational only, not financial advice.</sub>
