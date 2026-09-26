@@ -25,9 +25,11 @@ jobs:
             dist/snake-light.svg?palette=github-light&color_snake=#6E3BE8&color_dots=#ece7f8,#c9b6ff,#9945FF,#6E3BE8,#3a1f8f
 
       - name: publish
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd dist
+          git init -q -b output
+          git config user.name "Strak"
+          git config user.email "180978138+usestrak@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Contribution snake, $(date -u +'%Y-%m-%d')"
+          git push -q --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" output
