@@ -26,6 +26,8 @@ jobs:
 
       - name: publish
         run: |
+          # the generator runs in a container as root, so the runner cannot write inside dist
+          sudo chown -R "$(id -u):$(id -g)" dist
           cd dist
           git init -q -b output
           git config user.name "Strak"
